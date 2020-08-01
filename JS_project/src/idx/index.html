@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<title>Site</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+
+</head>
+<body>
+
+	<h1>Teste</h1>
+
+	<a href="../cli/clients.html" onclick="send_client()">Página de clientes</a>
+	
+
+	<script type="text/javascript">
+		var socket = io('http://localhost:3000')
+
+		function send_client() {
+			socket.emit("client_sended", "Clickaram no link de cliente")
+		}
+		
+	</script>
+</body>
+</html>
