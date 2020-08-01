@@ -5,3 +5,4 @@ __Para rodar esse script, utilizei algumas dependências JavaScript. Usei expres
 
     Para instalar as dependências JavaScript: npm add express ejs socket.io
   
+O sistema só funciona quando se inicializa o .bat 
